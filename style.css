@@ -10,35 +10,86 @@ html,body{
     align-items: center;
     justify-content: center;
 }
-form{
-    width: 350px;
-    height: 480px;
-    border: 1px solid #123ddf;
-    border-radius: 15px;
-    padding: 10px;
-    display: inline;
- 
 
-    h1{
-        text-align: center;
-        border-bottom: 2px solid black;
-        margin-bottom:20px ;
+
+@media (max-width:600px) {
+    form{
+        width: 350px;
+        height: 480px;
+        border: 1px solid #123ddf;
+        border-radius: 15px;
+        padding: 10px;
+        display: inline;
+     
+    
+        h1{
+            text-align: center;
+            border-bottom: 2px solid black;
+            margin-bottom:20px ;
+        }
+       input{
+        margin:10px 0;
+        width: 100%;
+       }
+       textarea{
+        margin: 10px 0;
+        width: 100%;
+        height: 50px;
+       }
+       #submit{
+        background-color: #1a45e1;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+       }
     }
-   input{
-    margin:10px 0;
-    width: 100%;
-   }
-   textarea{
-    margin: 10px 0;
-    width: 100%;
-    height: 50px;
-   }
-   #submit{
-    background-color: #1a45e1;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-   }
+    
+}
 
-
+@media (min-width:600px) {
+    form{
+        width: 100%;
+        height: 90%;
+        border: 2px solid #95f9b8;
+        border-radius: 15px;
+        padding: 10px;
+        display: inline;
+        margin: 20px;
+     text-transform: capitalize;
+    
+        h1{
+            font-size: 100px;
+            text-align: center;
+            border-bottom: 5px solid black;
+            margin-bottom:20px ;
+        }
+        label{
+            font-size: 50px;
+            margin: 0 20px;
+        }
+       input,textarea{
+        margin:10px 0;
+        width: 100%;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        background: #95f9b8;
+        outline: none;
+        padding: 5px 30px;
+        font-size: 40px;
+       }
+       textarea{
+        height: 550px;
+       }
+       
+       #submit{
+        background-color: #95f9b8;
+        border: none;
+        height: 70px;
+        border-radius: 10px;
+        
+       }
+    }
+    
+    
 }
