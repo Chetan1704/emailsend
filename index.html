@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="script.js"></script>
+
+<body>
+    <form id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+         <h1>Form</h1>
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Name</label>
+        <input type="text" name="user_name" id="name">
+        <br>
+        <label>Email</label>
+        <input type="email" name="user_email" id="email">
+        <br>
+        <label>Subject</label>
+        <input type="text" name="user_subject" id="subject">
+        <br>
+        <label>Amount</label>
+        <input type="number" name="user_amount" id="amount">
+        <br>
+        <label>Message</label>
+        <textarea name="message" id="message">
+        </textarea>
+        <br>
+        <input type="submit" value="Send" onclick="sendmail()" id="submit">
+    </form>
+</body>
+</html>
