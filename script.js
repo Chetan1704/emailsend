@@ -14,7 +14,7 @@ function sendmail(){
         amount : document.getElementById("amount").value,
         subject: document.getElementById("subject").value
     }
-    emailjs.send("service_8323737","template_79rhydl",parms).then(alert("Email is successfully sent !"));
+    emailjs.send("service_8323737","template_el70a2w",parms).then(alert("Email is successfully sent !"));
 }
 
     
